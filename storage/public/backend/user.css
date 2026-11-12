@@ -1,0 +1,482 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2e9e9;
+    color: #f2e9e9;
+}
+
+/* =====================================
+   DASHBOARD
+===================================== */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar {
+    width: 205px;
+    min-height: 100vh;
+    background: #d9d9d9;
+    padding: 25px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/* =====================================
+   ADMIN PROFILE
+===================================== */
+
+.profile-admin {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.admin-info h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-info p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.admin-info span {
+    font-size: 10px;
+}
+
+/* =====================================
+   SIDEBAR MENU
+===================================== */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-item {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.menu-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+/* MENU AKTIF */
+
+.menu-item.active {
+    background: #fff;
+}
+
+.menu-item:hover {
+    background: #fff;
+}
+
+/* =====================================
+   LOGOUT
+===================================== */
+
+.logout {
+    margin-top: auto;
+    padding: 0 14px;
+}
+
+.logout a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.logout i {
+    font-size: 19px;
+}
+
+/* =====================================
+   MAIN
+===================================== */
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+    background: #b82025;
+    overflow: hidden;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.top-header {
+    height: 51px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.menu-toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.notification {
+    font-size: 19px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.user-profile > i:first-child {
+    font-size: 23px;
+}
+
+.user-profile div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.user-profile span {
+    font-size: 13px;
+}
+
+.user-profile small {
+    font-size: 11px;
+}
+
+.user-profile .arrow {
+    font-size: 10px;
+}
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.content {
+    padding: 30px 35px;
+}
+
+/* =====================================
+   TITLE
+===================================== */
+
+.page-title h2 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.page-title p {
+    font-size: 10px;
+}
+
+/* =====================================
+   ACTION BAR
+===================================== */
+
+.action-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.btn-add {
+    border: none;
+    background: #ff999d;
+    padding: 7px 12px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-add i {
+    margin-right: 4px;
+}
+
+/* =====================================
+   SEARCH
+===================================== */
+
+.search-box {
+    width: 130px;
+    height: 27px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 9px;
+}
+
+.search-box i {
+    font-size: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 9px;
+}
+
+/* =====================================
+   TABLE
+===================================== */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    font-size: 9px;
+}
+
+/* HEADER TABLE */
+
+thead {
+    background: #ff999d;
+}
+
+th {
+    text-align: left;
+    padding: 7px 9px;
+    font-weight: 500;
+}
+
+/* BODY */
+
+td {
+    padding: 11px 9px;
+    border-bottom: 1px solid #fff;
+    vertical-align: middle;
+}
+
+/* =====================================
+   WIDTH KOLOM
+===================================== */
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 40px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 130px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 140px;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 190px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 130px;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 70px;
+}
+
+/* =====================================
+   AKSI
+===================================== */
+
+.action {
+    white-space: nowrap;
+}
+
+.action button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.action button:hover {
+    transform: scale(1.15);
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .content {
+        padding: 25px 20px;
+    }
+
+    .admin-info h3 {
+        font-size: 13px;
+    }
+
+    .menu-item {
+        font-size: 12px;
+    }
+}
+
+/* =====================================
+   HP
+===================================== */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        position: fixed;
+        left: -230px;
+        top: 0;
+        width: 220px;
+        z-index: 1000;
+        transition: 0.3s;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .content {
+        padding: 22px 15px;
+    }
+
+    .top-header {
+        padding: 0 15px;
+    }
+
+    .action-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-add {
+        width: max-content;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .header-right {
+        gap: 15px;
+    }
+
+    .user-profile div {
+        display: none;
+    }
+
+    .notification {
+        display: none;
+    }
+}
+
+/* =====================================
+   HP KECIL
+===================================== */
+
+@media (max-width: 450px) {
+
+    .content {
+        padding: 20px 12px;
+    }
+
+    .page-title h2 {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 9px;
+    }
+}
+.profile-admin .logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-admin .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}

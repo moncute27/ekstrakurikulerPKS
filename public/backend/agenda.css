@@ -1,0 +1,713 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4eeee;
+    color: #000;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.admin-container {
+    width: min(1270px, 94%);
+    min-height: 575px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    background: #b82025;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    width: 205px;
+
+    flex-shrink: 0;
+
+    background: #d9d9d9;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 18px 25px;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+
+.brand-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+.brand-text {
+    padding-top: 2px;
+}
+
+
+.brand-text h2 {
+    font-size: 15px;
+    font-weight: 500;
+
+    margin-bottom: 2px;
+}
+
+
+.brand-text p {
+    font-size: 11px;
+    line-height: 1.5;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   SIDEBAR MENU
+===================================================== */
+
+.sidebar-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.sidebar-menu a {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    padding: 0 14px;
+
+    color: #000;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+
+.sidebar-menu a i {
+    width: 22px;
+
+    text-align: center;
+
+    font-size: 22px;
+}
+
+
+.sidebar-menu a:hover {
+    background: #eee;
+}
+
+
+/* Menu aktif */
+
+.sidebar-menu a.active {
+    background: #fff;
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.logout {
+    margin-top: auto;
+}
+
+
+.logout a {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 8px 14px;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.logout i {
+    font-size: 22px;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.main-content {
+    flex: 1;
+
+    min-width: 0;
+
+    background: #b82025;
+}
+
+
+/* =====================================================
+   TOPBAR
+===================================================== */
+
+.topbar {
+    height: 58px;
+
+    margin: 0 12px;
+
+    border-bottom: 1px solid #fff;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.menu-button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    color: #000;
+}
+
+
+.topbar-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Notification */
+
+.notification {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    color: #000;
+}
+
+
+/* =====================================================
+   ADMIN PROFILE
+===================================================== */
+
+.admin-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #fff;
+}
+
+
+.admin-icon {
+    font-size: 28px;
+
+    color: #000;
+}
+
+
+.admin-name {
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.2;
+}
+
+
+.admin-name span {
+    font-size: 12px;
+}
+
+
+.admin-name small {
+    font-size: 11px;
+}
+
+
+.arrow {
+    color: #000;
+
+    font-size: 12px;
+
+    margin-left: 2px;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.content {
+    padding: 28px 28px 40px;
+}
+
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.page-title h1 {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+
+.page-title p {
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.toolbar {
+    margin-top: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Tambah */
+
+.add-button {
+    border: none;
+
+    background: #ff8589;
+
+    color: #000;
+
+    padding: 7px 13px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.add-button i {
+    margin-right: 5px;
+}
+
+
+/* Search */
+
+.search-box {
+    width: 132px;
+
+    height: 28px;
+
+    background: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 9px;
+
+    gap: 8px;
+}
+
+
+.search-box i {
+    font-size: 12px;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 9px;
+}
+
+
+.search-box input::placeholder {
+    color: #222;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrapper {
+    width: 100%;
+
+    margin-top: 29px;
+
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-size: 10px;
+}
+
+
+/* Header */
+
+thead {
+    background: #ff8589;
+}
+
+
+th {
+    text-align: left;
+
+    padding: 7px 10px;
+
+    font-weight: 500;
+
+    height: 28px;
+}
+
+
+th.number {
+    width: 40px;
+}
+
+
+th:nth-child(2) {
+    width: 28%;
+}
+
+
+th:nth-child(3) {
+    width: 48%;
+}
+
+
+th.action-column {
+    width: 95px;
+}
+
+
+/* Body */
+
+td {
+    padding: 11px 10px;
+
+    vertical-align: top;
+
+    line-height: 1.35;
+}
+
+
+td.number {
+    width: 40px;
+}
+
+
+/* =====================================================
+   ACTION
+===================================================== */
+
+.actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.actions button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    color: #000;
+}
+
+
+.actions button:hover {
+    transform: scale(1.1);
+}
+
+
+.edit {
+    color: #000;
+}
+
+
+.delete {
+    color: #000;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .admin-container {
+        width: 96%;
+
+        margin: 20px auto;
+    }
+
+
+    .sidebar {
+        width: 190px;
+    }
+
+
+    .content {
+        padding: 25px 20px;
+    }
+
+
+    .sidebar-menu a {
+        font-size: 12px;
+
+        gap: 17px;
+    }
+
+
+    table {
+        min-width: 500px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .admin-container {
+        width: 100%;
+
+        min-height: 100vh;
+
+        margin: 0;
+
+        border-radius: 0;
+    }
+
+
+    /* Sidebar disembunyikan */
+
+    .sidebar {
+        position: fixed;
+
+        left: -220px;
+
+        top: 0;
+
+        bottom: 0;
+
+        width: 210px;
+
+        z-index: 20;
+
+        transition: left 0.3s ease;
+
+        box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+    }
+
+
+    /* Sidebar muncul */
+
+    .sidebar.show {
+        left: 0;
+    }
+
+
+    .main-content {
+        width: 100%;
+    }
+
+
+    .topbar {
+        height: 60px;
+    }
+
+
+    .content {
+        padding: 25px 18px;
+    }
+
+
+    .toolbar {
+        gap: 15px;
+    }
+
+
+    .search-box {
+        width: 145px;
+    }
+
+
+    .table-wrapper {
+        margin-top: 25px;
+    }
+
+
+    table {
+        min-width: 560px;
+    }
+
+
+    .admin-name {
+        display: none;
+    }
+
+
+    .topbar-right {
+        gap: 15px;
+    }
+}
+
+
+/* =====================================================
+   HP KECIL
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .content {
+        padding: 22px 14px;
+    }
+
+
+    .page-title h1 {
+        font-size: 14px;
+    }
+
+
+    .page-title p {
+        font-size: 9px;
+    }
+
+
+    .toolbar {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .add-button {
+        width: max-content;
+    }
+
+
+    .search-box {
+        width: 100%;
+
+        height: 32px;
+    }
+
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+
+    table {
+        min-width: 550px;
+    }
+}

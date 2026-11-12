@@ -1,0 +1,463 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2e9e9;
+    color: #111;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container {
+    width: 100%;
+    max-width: 1270px;
+    min-height: 100vh;
+    margin: 20px auto;
+
+    background-color: #b91f24;
+
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    width: 100%;
+    height: 240px;
+
+    position: relative;
+}
+
+
+/* ========================================
+   FOTO HEADER
+======================================== */
+
+.header-image {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 18px 18px 0 0;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo {
+    position: absolute;
+
+    top: 30px;
+    left: 45px;
+
+    width: 60px;
+    height: 60px;
+
+    padding: 5px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    object-fit: contain;
+
+    z-index: 5;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    position: absolute;
+
+    top: 32px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    background-color: #eeeeee;
+
+    padding: 15px 20px;
+
+    border-radius: 20px;
+
+    z-index: 10;
+
+    max-width: calc(100% - 110px);
+
+    overflow-x: auto;
+}
+
+
+/* NAVBAR LINK */
+
+.navbar a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    padding-bottom: 4px;
+}
+
+
+/* HOVER */
+
+.navbar a:hover {
+    color: #b91f24;
+}
+
+
+/* ACTIVE */
+
+.navbar a.active {
+    color: #b91f24;
+    font-weight: 600;
+}
+
+
+/* GARIS ACTIVE */
+
+.navbar a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    background-color: #b91f24;
+}
+
+
+/* ========================================
+   BAGIAN ANGGOTA
+======================================== */
+
+.member-section {
+    width: 100%;
+
+    padding: 25px 20px 50px;
+
+    background-color: #b91f24;
+}
+
+
+/* ========================================
+   JUDUL
+======================================== */
+
+.member-section h1 {
+    text-align: center;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+
+/* ========================================
+   GARIS BAWAH JUDUL
+======================================== */
+
+.title-line {
+    width: 75px;
+    height: 2px;
+
+    background-color: white;
+
+    margin: 0 auto 20px;
+
+    border-radius: 5px;
+}
+
+
+/* ========================================
+   TABLE WRAPPER
+======================================== */
+
+.table-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    overflow-x: auto;
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+table {
+    width: 55%;
+    min-width: 500px;
+
+    border-collapse: collapse;
+
+    background-color: #d9d9d9;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   TABLE HEADER
+======================================== */
+
+thead {
+    background-color: #82afe8;
+}
+
+
+th {
+    height: 44px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   TABLE BODY
+======================================== */
+
+td {
+    padding: 9px 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #c4c4c4;
+
+    font-size: 14px;
+}
+
+
+/* Nama rata kiri */
+
+td:first-child {
+    text-align: left;
+}
+
+
+/* ========================================
+   BARIS TABLE
+======================================== */
+
+tbody tr {
+    background-color: #d9d9d9;
+}
+
+
+tbody tr:hover {
+    background-color: #eeeeee;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin: 15px auto;
+
+        border-radius: 15px;
+    }
+
+
+    .header {
+        height: 210px;
+    }
+
+
+    .header-image {
+        height: 155px;
+    }
+
+
+    .logo {
+        width: 52px;
+        height: 52px;
+
+        top: 20px;
+        left: 25px;
+    }
+
+
+    .navbar {
+        top: 22px;
+        right: 12px;
+
+        gap: 14px;
+
+        padding: 12px 15px;
+
+        max-width: calc(100% - 90px);
+    }
+
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+
+    .member-section {
+        padding: 20px 12px 40px;
+    }
+
+
+    .member-section h1 {
+        font-size: 18px;
+    }
+
+
+    table {
+        width: 100%;
+        min-width: 500px;
+    }
+
+
+    th,
+    td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+}
+
+
+/* ========================================
+   HP
+======================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+
+        margin: 0;
+
+        border-radius: 0;
+    }
+
+
+    .header {
+        height: 180px;
+    }
+
+
+    .header-image {
+        height: 130px;
+
+        border-radius: 0;
+    }
+
+
+    .logo {
+        width: 45px;
+        height: 45px;
+
+        top: 15px;
+        left: 15px;
+    }
+
+
+    .navbar {
+        top: 15px;
+        right: 8px;
+
+        gap: 12px;
+
+        padding: 10px 12px;
+
+        max-width: calc(100% - 70px);
+
+        border-radius: 15px;
+    }
+
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+
+    .member-section {
+        padding: 15px 10px 35px;
+    }
+
+
+    .member-section h1 {
+        font-size: 16px;
+    }
+
+
+    .title-line {
+        width: 65px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .table-wrapper {
+        justify-content: flex-start;
+    }
+
+
+    table {
+        min-width: 500px;
+    }
+
+}

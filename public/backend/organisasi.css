@@ -1,0 +1,654 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2e9e9;
+    padding: 25px;
+    color: #000;
+}
+
+
+/* ==================================================
+   CONTAINER UTAMA
+================================================== */
+
+.admin-container {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    min-height: 85vh;
+    margin: 0 auto;
+    background-color: #e5e7eb;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==================================================
+   SIDEBAR
+================================================== */
+
+.sidebar {
+    width: 270px;
+    flex-shrink: 0;
+    background-color: #e5e7eb;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    padding-left: 4px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.admin-name {
+    min-width: 0;
+}
+
+.admin-name h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 3px;
+}
+
+.admin-name p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.2;
+}
+
+
+/* ==================================================
+   SIDEBAR MENU
+================================================== */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-grow: 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 14px;
+    min-height: 40px;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: #d1d5db;
+    font-weight: 600;
+}
+
+.menu-icon {
+    width: 22px;
+    flex-shrink: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   LOGOUT
+================================================== */
+
+.logout {
+    margin-top: auto;
+}
+
+.logout a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 14px;
+    min-height: 40px;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.logout a:hover {
+    background-color: #d1d5db;
+}
+
+.logout-icon {
+    width: 22px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   MAIN CONTENT
+================================================== */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    background-color: #b91c1c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+/* ==================================================
+   TOPBAR
+================================================== */
+
+.topbar {
+    height: 60px;
+    flex-shrink: 0;
+    margin: 0 12px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+}
+
+.menu-toggle {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.notification {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.profile-admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.admin-account {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.admin-account strong {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.admin-account small {
+    font-size: 10px;
+}
+
+.arrow {
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+
+/* ==================================================
+   KONTEN ORGANISASI
+================================================== */
+
+.organization-content {
+    padding: 10px 30px 30px;
+    flex: 1;
+}
+
+
+/* ==================================================
+   JUDUL
+================================================== */
+
+.organization-title {
+    margin-bottom: 25px;
+}
+
+.organization-title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.organization-title p {
+    font-size: 11px;
+    color: #000;
+}
+
+
+/* ==================================================
+   CARD ORGANISASI
+================================================== */
+
+.organization-card {
+    width: 100%;
+    max-width: 100%;
+    background-color: #e5e7eb;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+}
+
+
+/* ==================================================
+   HEADER CARD
+================================================== */
+
+.organization-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.organization-card-header h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.organization-card-header p {
+    font-size: 9px;
+}
+
+
+/* ==================================================
+   TOMBOL TAMBAH
+================================================== */
+
+.add-button {
+    border: none;
+    background-color: #fca5a5;
+    color: #000;
+    padding: 7px 10px;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-button span {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.add-button:hover {
+    opacity: 0.85;
+}
+
+
+/* ==================================================
+   TABLE WRAPPER
+================================================== */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* ==================================================
+   TABLE
+================================================== */
+
+.organization-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+/* ==================================================
+   TABLE HEADER
+================================================== */
+
+.organization-table thead {
+    background-color: #ff8f94;
+}
+
+.organization-table th {
+    height: 28px;
+    padding: 5px 6px;
+    font-size: 9px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   TABLE BODY
+================================================== */
+
+.organization-table td {
+    height: 45px;
+    padding: 5px;
+    border-bottom: 1px solid #777;
+    font-size: 9px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* ==================================================
+   UKURAN KOLOM
+================================================== */
+
+.organization-table th:nth-child(1),
+.organization-table td:nth-child(1) {
+    width: 6%;
+}
+
+.organization-table th:nth-child(2),
+.organization-table td:nth-child(2) {
+    width: 11%;
+}
+
+.organization-table th:nth-child(3),
+.organization-table td:nth-child(3) {
+    width: 22%;
+}
+
+.organization-table th:nth-child(4),
+.organization-table td:nth-child(4) {
+    width: 16%;
+}
+
+.organization-table th:nth-child(5),
+.organization-table td:nth-child(5) {
+    width: 13%;
+}
+
+.organization-table th:nth-child(6),
+.organization-table td:nth-child(6) {
+    width: 13%;
+}
+
+.organization-table th:nth-child(7),
+.organization-table td:nth-child(7) {
+    width: 19%;
+}
+
+
+/* ==================================================
+   FOTO PENGURUS
+================================================== */
+
+.member-photo {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==================================================
+   STATUS
+================================================== */
+
+.status {
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+.active-status {
+    background-color: #8dff9a;
+}
+
+.inactive-status {
+    background-color: #ff7777;
+}
+
+
+/* ==================================================
+   AKSI
+================================================== */
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.action-buttons button {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    color: #000;
+}
+
+.action-buttons button:hover {
+    opacity: 0.6;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 900px) {
+
+    .admin-container {
+        width: calc(100% - 30px);
+    }
+
+    .sidebar {
+        width: 230px;
+    }
+
+    .organization-content {
+        padding: 10px 22px 30px;
+    }
+
+    .organization-card {
+        max-width: 100%;
+    }
+}
+
+
+/* ==================================================
+   TABLET KECIL
+================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .admin-container {
+        min-height: 90vh;
+    }
+
+    .sidebar {
+        width: 210px;
+        padding: 20px 15px;
+    }
+
+    .organization-content {
+        padding: 10px 20px 25px;
+    }
+
+    .organization-title h1 {
+        font-size: 16px;
+    }
+
+    .organization-title p {
+        font-size: 10px;
+    }
+
+    .organization-card {
+        padding: 12px;
+    }
+}
+
+
+/* ==================================================
+   HP
+================================================== */
+
+@media (max-width: 640px) {
+
+    body {
+        padding: 0;
+    }
+
+    .admin-container {
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar-menu {
+        gap: 4px;
+    }
+
+    .menu-item {
+        padding: 9px 12px;
+    }
+
+    .main-content {
+        border-radius: 0;
+    }
+
+    .topbar {
+        padding: 0 18px;
+    }
+
+    .organization-content {
+        padding: 15px 18px 25px;
+    }
+
+    .organization-title {
+        margin-bottom: 20px;
+    }
+
+    .organization-card-header {
+        gap: 15px;
+    }
+
+    .organization-table {
+        min-width: 650px;
+    }
+}
+
+
+/* ==================================================
+   HP SANGAT KECIL
+================================================== */
+
+@media (max-width: 480px) {
+
+    .organization-content {
+        padding: 15px 10px 25px;
+    }
+
+    .organization-card {
+        padding: 10px;
+    }
+
+    .organization-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add-button {
+        width: fit-content;
+    }
+}

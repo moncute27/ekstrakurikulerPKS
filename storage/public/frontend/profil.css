@@ -1,0 +1,440 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2e9e9;
+    color: #111;
+}
+
+
+/* =========================
+   HALAMAN
+========================= */
+
+.page {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 40px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: relative;
+
+    width: 100%;
+    height: 160px;
+
+    overflow: hidden;
+
+    border-radius: 25px 0 0;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: absolute;
+
+    top: 28px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 16px 18px;
+
+    background-color: rgba(235, 235, 235, 0.95);
+
+    border-radius: 18px;
+
+    gap: 12px;
+}
+
+.navbar a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #b72025;
+}
+
+.navbar a.active {
+    color: #111;
+}
+
+
+/* Garis bawah Profil */
+
+.navbar a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -7px;
+
+    height: 2px;
+
+    background-color: #b72025;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   PROFIL
+========================= */
+
+.profile {
+    width: 100%;
+
+    background-color: #bd2528;
+
+    min-height: 515px;
+
+    padding: 24px 27px 32px;
+
+    border-radius: 0 0 22px 22px;
+
+    color: #000;
+}
+
+
+
+
+
+
+
+/* =========================
+   JUDUL
+========================= */
+
+.profile h1 {
+    text-align: center;
+
+    font-size: 21px;
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   DESKRIPSI
+========================= */
+
+.description {
+    max-width: 520px;
+
+    margin: 0 auto;
+
+    font-size: 14px;
+    line-height: 1.45;
+
+    text-align: left;
+}
+
+
+/* =========================
+   INFO CONTAINER
+========================= */
+
+.info-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 580px;
+
+    margin: 55px auto 0;
+
+    gap: 40px;
+}
+
+
+/* =========================
+   INFO BOX
+========================= */
+
+.info-box {
+    width: 165px;
+    min-height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px;
+
+    background-color: #dedede;
+
+    border-radius: 22px;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.info-box .icon {
+    flex-shrink: 0;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+/* =========================
+   TEKS INFO
+========================= */
+
+.info-box span {
+    display: block;
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 10px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .page {
+        padding: 20px;
+    }
+
+    .header {
+        height: 150px;
+    }
+
+    .navbar {
+        gap: 9px;
+        padding: 13px 15px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        left: 18px;
+        top: 25px;
+    }
+
+    .profile {
+        padding: 40px 30px 25px;
+    }
+
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 650px) {
+
+    .page {
+        padding: 15px;
+    }
+
+    .header {
+        height: auto;
+        min-height: 250px;
+
+        border-radius: 18px;
+    }
+
+    .header-image {
+        height: 250px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+
+        left: 15px;
+        top: 15px;
+    }
+
+
+    /* Navbar berubah menjadi
+       horizontal scroll */
+
+    .navbar {
+        top: 75px;
+        left: 15px;
+        right: 15px;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        padding: 14px;
+
+        border-radius: 15px;
+
+        gap: 18px;
+
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+
+    /* Profil */
+
+    .profile {
+        min-height: auto;
+
+        padding: 35px 20px 30px;
+
+        border-radius: 0 0 18px 18px;
+    }
+
+
+    .profile h1 {
+        font-size: 18px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .description {
+        font-size: 13px;
+
+        text-align: center;
+    }
+
+
+    /* Info menjadi vertikal */
+
+    .info-container {
+        flex-direction: column;
+
+        margin-top: 35px;
+
+        gap: 18px;
+    }
+
+
+    .info-box {
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+}
+
+
+/* =========================
+   HP KECIL
+========================= */
+
+@media (max-width: 400px) {
+
+    .page {
+        padding: 10px;
+    }
+
+    .header-image {
+        height: 230px;
+    }
+
+    .navbar {
+        left: 10px;
+        right: 10px;
+    }
+
+    .profile h1 {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,515 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2e9e9;
+    color: #111;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 185px;
+    min-width: 185px;
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* HEADER SIDEBAR */
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 8px 15px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.admin-name h3 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.admin-name p {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0 8px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 42px;
+    padding: 7px 10px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: #111;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background: #eeeeee;
+}
+
+.menu-item.active {
+    background: #ffffff;
+}
+
+.icon {
+    width: 20px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 1;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout {
+    margin-top: auto;
+    padding: 20px 10px 25px;
+}
+
+.logout a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    text-decoration: none;
+    color: #111;
+
+    font-size: 12px;
+}
+
+.logout-icon {
+    font-size: 24px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    background: #b52226;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+    height: 62px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.notification {
+    font-size: 22px;
+    color: #000;
+}
+
+.profile-admin {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #fff;
+}
+
+.user-icon {
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid #000;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000;
+    font-size: 12px;
+}
+
+.profile-admin strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.profile-admin small {
+    display: block;
+    font-size: 10px;
+}
+
+.arrow {
+    color: #000;
+    font-size: 18px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    padding: 28px 24px 35px;
+}
+
+.page-title {
+    margin-bottom: 30px;
+}
+
+.page-title h1 {
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.page-title p {
+    color: #000;
+    font-size: 10px;
+}
+
+
+/* =========================
+   PROFILE WRAPPER
+========================= */
+
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 8px;
+
+    max-width: 900px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: #eeeeee;
+    padding: 18px 20px;
+
+    min-height: 235px;
+}
+
+.card h2 {
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   LOGO CARD
+========================= */
+
+.logo-card {
+    text-align: left;
+}
+
+.logo-preview {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    background: #fff;
+}
+
+.logo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.format {
+    font-size: 9px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.upload-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 9px 5px;
+
+    background: #fff;
+    color: #b52226;
+
+    text-align: center;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+#logo {
+    display: none;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.information-card {
+    padding-left: 14px;
+    padding-right: 35px;
+}
+
+.form-group {
+    margin-bottom: 13px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: #fff;
+
+    padding: 7px 9px;
+
+    font-family: inherit;
+    font-size: 9px;
+}
+
+.form-group input {
+    height: 23px;
+}
+
+.form-group textarea {
+    min-height: 58px;
+
+    resize: vertical;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.form-buttons {
+    max-width: 900px;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    margin-top: 35px;
+}
+
+.form-buttons button {
+    border: none;
+    padding: 8px 13px;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: #eeeeee;
+    color: #111;
+}
+
+.btn-save {
+    background: #eeeeee;
+    color: #111;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        position: fixed;
+
+        left: -190px;
+        top: 0;
+        bottom: 0;
+
+        z-index: 100;
+
+        transition: 0.3s;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .profile-wrapper {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .logo-card {
+        min-height: auto;
+    }
+
+    .information-card {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 480px) {
+
+    .topbar {
+        height: 55px;
+        padding: 0 12px;
+    }
+
+    .topbar-right {
+        gap: 12px;
+    }
+
+    .profile-admin div {
+        display: none;
+    }
+
+    .content {
+        padding: 20px 12px 30px;
+    }
+
+    .page-title {
+        margin-bottom: 20px;
+    }
+
+    .page-title h1 {
+        font-size: 16px;
+    }
+
+    .page-title p {
+        font-size: 9px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .form-buttons {
+        justify-content: stretch;
+    }
+
+    .form-buttons button {
+        flex: 1;
+        padding: 10px;
+    }
+
+}

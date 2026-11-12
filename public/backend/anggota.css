@@ -1,0 +1,710 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2e9e9;
+    color: #000;
+}
+
+
+/* =========================================
+   CONTAINER UTAMA
+========================================= */
+
+.admin-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    width: 170px;
+    min-width: 170px;
+
+    min-height: 100vh;
+
+    background: #d9d9d9;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 10px 15px;
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+/* =========================================
+   HEADER SIDEBAR
+========================================= */
+
+.sidebar-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 3px 25px;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* Tulisan */
+
+.admin-title {
+    min-width: 0;
+}
+
+.admin-title h3 {
+    font-size: 12px;
+
+    font-weight: 400;
+
+    margin-bottom: 3px;
+}
+
+.admin-title p {
+    font-size: 8px;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   MENU SIDEBAR
+========================================= */
+
+.sidebar-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.menu-item {
+    width: 100%;
+
+    min-height: 31px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 19px;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    transition: 0.2s;
+}
+
+
+.menu-item i {
+    width: 16px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Menu yang sedang dibuka */
+
+.menu-item.active {
+    background: #fff;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.logout {
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 10px;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-size: 10px;
+}
+
+.logout i {
+    width: 16px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+    flex: 1;
+
+    min-width: 0;
+
+    min-height: 100vh;
+
+    background: #b91f24;
+}
+
+
+/* =========================================
+   TOPBAR
+========================================= */
+
+.topbar {
+    height: 60px;
+
+    border-bottom: 1px solid #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 18px;
+}
+
+
+/* Tombol hamburger */
+
+.menu-button {
+    background: none;
+
+    border: none;
+
+    color: #000;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+/* Bagian kanan */
+
+.topbar-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* Bell */
+
+.notification {
+    font-size: 17px;
+
+    color: #000;
+}
+
+
+/* Profile admin */
+
+.admin-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #fff;
+}
+
+.profile-icon {
+    color: #000;
+
+    font-size: 22px;
+}
+
+.profile-text {
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.2;
+}
+
+.profile-text span {
+    font-size: 11px;
+}
+
+.profile-text small {
+    font-size: 9px;
+}
+
+.arrow {
+    color: #000;
+
+    font-size: 9px;
+
+    margin-left: 3px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    padding: 25px 24px 40px;
+}
+
+
+/* =========================================
+   JUDUL HALAMAN
+========================================= */
+
+.page-title {
+    margin-bottom: 17px;
+}
+
+.page-title h1 {
+    font-size: 13px;
+
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+.page-title p {
+    font-size: 9px;
+}
+
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.toolbar {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   BUTTON TAMBAH
+========================================= */
+
+.add-button {
+    border: none;
+
+    background: #ff999c;
+
+    color: #000;
+
+    padding: 7px 11px;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+.add-button i {
+    margin-right: 3px;
+}
+
+.add-button:hover {
+    background: #ffb2b4;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+    width: 107px;
+
+    height: 22px;
+
+    background: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 7px;
+}
+
+.search-box i {
+    font-size: 9px;
+
+    margin-right: 6px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 8px;
+
+    background: transparent;
+}
+
+.search-box input::placeholder {
+    color: #000;
+}
+
+
+/* =========================================
+   JUDUL TABLE
+========================================= */
+
+.table-title {
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.member-table {
+    width: 100%;
+
+    min-width: 600px;
+
+    border-collapse: collapse;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.member-table thead {
+    background: #ff999c;
+}
+
+.member-table th {
+    padding: 7px 5px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.member-table tbody tr {
+    border-bottom: 1px solid #fff;
+}
+
+.member-table td {
+    padding: 5px;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* Nama dibuat sedikit lebih ke kiri */
+
+.member-table td:nth-child(2) {
+    text-align: left;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+    display: inline-block;
+
+    padding: 3px 7px;
+
+    font-size: 7px;
+}
+
+.status.aktif {
+    background: #86efac;
+
+    color: #000;
+}
+
+
+/* =========================================
+   AKSI
+========================================= */
+
+.actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.actions button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: #000;
+
+    font-size: 10px;
+
+    padding: 0;
+}
+
+.actions button:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 160px;
+
+        min-width: 160px;
+    }
+
+    .content {
+        padding: 22px 18px 30px;
+    }
+
+    .topbar {
+        padding: 0 15px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET KECIL
+========================================= */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        position: fixed;
+
+        left: -180px;
+
+        top: 0;
+
+        width: 170px;
+
+        min-width: 170px;
+
+        transition: 0.3s;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .content {
+        padding: 22px 15px 30px;
+    }
+
+}
+
+
+/* =========================================
+   HP
+========================================= */
+
+@media (max-width: 480px) {
+
+    .topbar {
+        height: 55px;
+
+        padding: 0 12px;
+    }
+
+    .topbar-right {
+        gap: 13px;
+    }
+
+    .profile-text {
+        display: none;
+    }
+
+    .profile-icon {
+        font-size: 21px;
+    }
+
+    .notification {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 20px 10px 30px;
+    }
+
+    .page-title h1 {
+        font-size: 13px;
+    }
+
+    .page-title p {
+        font-size: 8px;
+    }
+
+
+    /* Toolbar menjadi atas-bawah */
+
+    .toolbar {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 180px;
+    }
+
+
+    /*
+       Tabel tidak dipaksa mengecil.
+       Kalau layar HP sempit,
+       tabel bisa digeser ke kiri-kanan.
+    */
+
+    .table-container {
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .member-table {
+        min-width: 650px;
+    }
+
+}
+
+
+/* =========================================
+   HP SANGAT KECIL
+========================================= */
+
+@media (max-width: 350px) {
+
+    .content {
+        padding-left: 8px;
+
+        padding-right: 8px;
+    }
+
+    .add-button {
+        font-size: 8px;
+
+        padding: 6px 9px;
+    }
+
+}
